@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../siteconfig.css">
+<script src="../sitejs.js"></script>
+    <head>
+        <title>Valorant Agents</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                fetch('https://valorant-api.com/v1/agents')
+                .then(response => {return response.json()})
+                .then (data => {
+                    //console.log(data);
+                    const agent = data[0];
+                    const name = agent.displayName;
+                    document.querySelector('header').innerHTML = name;
+                })
+                .catch(error => {
+                    console.log('Error', error);
+                })
+            });
+        </script>
+    </head>
+    <body>
+
+        <header onclick="querySelectorExample()">Johnny's Tools</header>
+
+    </body>
+</html>
