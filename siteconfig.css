@@ -59,6 +59,12 @@ button:hover {
     background-color: #45a049;
 }
 
+form {
+    text-align: center;
+}
+
+/* ------------- GRID CONTAINER ------------ */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
