@@ -31,6 +31,12 @@ h2 {
     padding: 20px;
 }
 
+h3 {
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
 button {
     display: block;
     margin: 20px auto;
@@ -85,6 +91,14 @@ form {
 /* -------------- counter card --------------------*/
 .counter-card {
     background-color: #444;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+}
+
+.counter-card2 {
+    background-color: #525252;
     padding: 20px;
     border-radius: 4px;
     text-align: center;
